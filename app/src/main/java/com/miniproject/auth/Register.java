@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Objects;
+
 public class Register extends AppCompatActivity {
     EditText mFullName,mEmail,mPassword;
     Button rbtn;
@@ -80,13 +82,21 @@ public class Register extends AppCompatActivity {
                             Toast.makeText(Register.this, "SucessFully Create User", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         }else{
-                            Toast.makeText(Register.this, "Error !!!"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "Error !!!"+ Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
+                            reg_progressbar.setVisibility(View.GONE);
                         }
                     }
                 });
             }
 
 
+        });
+
+        login_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Login.class));
+            }
         });
 
 
