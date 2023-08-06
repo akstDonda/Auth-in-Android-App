@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "537405993508",
+    "project_id": "auth-fe960",
+    "storage_bucket": "auth-fe960.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537405993508:android:f0a8b56edcf9c3ea679eb1",
+        "android_client_info": {
+          "package_name": "com.miniproject.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537405993508-hsk0q030jcos2e1nmdqoih9mlmt4gjbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7q8LXDPkQh3DPoTTeO5vS-hvVm4wQ79U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537405993508-hsk0q030jcos2e1nmdqoih9mlmt4gjbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
